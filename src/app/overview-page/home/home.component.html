@@ -1,0 +1,199 @@
+<div class="container">
+    <br>
+    <div class="row">
+      <div class="col-md-3">
+        <mat-card class="analytics_card">
+          <!--  <mat-card-header>-->
+          <div class="row">
+            <div class="col-md-7 _top_card_left">
+              <a mat-button></a>
+            </div>
+            <div class="col-md-5 ">
+              <div class="_wrap_side">
+                <div class="custom-select-1">
+                <mat-card-subtitle> Transaction</mat-card-subtitle>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-7 _top_card_left">
+              <i class="fas fa-chart-bar fa-flip-horizontal  fa-3x" style="color: orange;"></i>
+            </div>
+            <div class="col-md-5 ">
+              <div class="_wrap_side">
+                <div class="custom-select-1">
+                <mat-card-title>528</mat-card-title>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <mat-divider></mat-divider>
+          <!--  </mat-card-header>-->
+          <p><i class="fas fa-sync fa-xs"></i> Transaction processed</p>
+          <mat-card-content>
+          </mat-card-content>
+        </mat-card>
+      </div>
+      <div class="col-md-3">
+          <mat-card class="analytics_card">
+          <!--  <mat-card-header>-->
+          <div class="row">
+            <div class="col-md-7 _top_card_left">
+              <a mat-button></a>
+            </div>
+            <div class="col-md-5 ">
+              <div class="_wrap_side">
+                <div class="custom-select-1">
+                <mat-card-subtitle>available</mat-card-subtitle>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 _top_card_left">
+              <i class="fas fa-wallet fa-3x" style="color: green;"></i>
+            </div>
+            <div class="col-md-6 ">
+              <div class="_wrap_side">
+                <div class="custom-select-1">
+                <mat-card-title><small>Ksh</small>20,128</mat-card-title>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <mat-divider></mat-divider>
+          <!--  </mat-card-header>-->
+          <p><i class="fas fa-sync fa-xs"></i> available balance in (ksh)</p>
+          <mat-card-content>
+          </mat-card-content>
+        </mat-card> 
+      </div>
+      <div class="col-md-3">
+          <mat-card class="analytics_card">
+          <!--  <mat-card-header>-->
+          <div class="row">
+            <div class="col-md-6 _top_card_left">
+              <a mat-button></a>
+            </div>
+            <div class="col-md-6 ">
+              <div class="_wrap_side">
+                <div class="custom-select-1">
+                <mat-card-subtitle>Shop Orders</mat-card-subtitle>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-7 _top_card_left">
+              <i class="fas fa-shopping-cart fa-flip-horizontal fa-3x" style="color: red;"></i>
+            </div>
+            <div class="col-md-5 ">
+              <div class="_wrap_side">
+                <div class="custom-select-1">
+                <mat-card-title>54</mat-card-title>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <mat-divider></mat-divider>
+          <!--  </mat-card-header>-->
+          <p><i class="fas fa-sync fa-xs"></i> Online Shop Orders</p>
+          <mat-card-content>
+          </mat-card-content>
+        </mat-card> 
+      </div>
+      <div class="col-md-3">
+          <mat-card class="analytics_card">
+          <!--  <mat-card-header>-->
+          <div class="row">
+            <div class="col-md-7 _top_card_left">
+              <a mat-button></a>
+            </div>
+            <div class="col-md-5 ">
+              <div class="_wrap_side">
+                <div class="custom-select-1">
+                <mat-card-subtitle>Customers</mat-card-subtitle>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-7 _top_card_left">
+              <i class="far fa-user fa-3x" style="color: skyblue;" ></i>
+            </div>
+            <div class="col-md-5 ">
+              <div class="_wrap_side">
+                <div class="custom-select-1">
+                <mat-card-title>32</mat-card-title>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br>
+          <mat-divider></mat-divider>
+          <!--  </mat-card-header>-->
+          <p> <i class="fas fa-sync fa-xs"></i> Customer Information</p>
+          <mat-card-content>
+          </mat-card-content>
+        </mat-card> 
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row bottom_row">
+      <div class="col-md-12">
+        <mat-card class="analytics_card">
+          <!--  <mat-card-header>-->
+          <!--  </mat-card-header>-->
+          <mat-card-content>
+            <div class="row _wrap_grap" style="background-color: #fff;">
+              <div class="col-6">
+                <mat-card-subtitle>Sales Overview 2020</mat-card-subtitle>
+                <small>A snapshot of how your business revenue is performing this year</small>
+              </div>
+              <div class="col-6">
+              </div>
+              <div class="col-md-12" style="display: inline-block;">
+                <canvas baseChart
+                [colors]="ChartColors"
+                [datasets]="barChartData"
+                [labels]="barChartLabels"
+                [options]="barChartOptions"
+                [legend]="barChartLegend"
+                [chartType]="barChartType">
+                 </canvas>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12 justify-content-start wrap_bottom_graph">
+                <div class="wrap_bottom_graph_left">
+                </div>
+                <div class="wrap_bottom_graph_right">
+                </div>
+              </div>
+            </div>
+            <div class="row m-t">
+              <div class="col-6">
+              </div>
+              <div class="col-6">
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  <!--  <div class="row help_row">-->
+  <!--    <div class="col-md-12">-->
+  <!--      <button mat-button>-->
+  <!--        <i class="far fa-comment-dots"></i> Need help?-->
+  <!--      </button>-->
+  <!--    </div>-->
+  <!--  </div>-->
+  </div>
+  
+  
+  

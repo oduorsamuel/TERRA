@@ -1,0 +1,120 @@
+<mat-sidenav-container fullscreen>
+
+  <mat-sidenav class="_sidenav" mode="side" #sidenav opened position="start">
+    <div style="text-align: center;">
+      <img style="width: 220px; margin-top: 0em;" src="assets/logo.png" alt="Image" />
+      <h3 style="text-align: center;"><strong>TERRA SOFTWORKS</strong></h3>
+      <h3 style="text-align: center; margin-top: 0em;"><strong>LIMITED</strong></h3>
+      <div style="text-align: center;">
+        <p style=" color: white;"><small style=" padding: 0.5em; background-color: gray;">Business Account -
+            TERR79A1</small></p>
+      </div>
+      <p style="text-align: center;" style=" color: skyblue; margin-right: 2em;"><a href="#"
+          style="margin-left: 3em; font-size: 14px; color: skyblue;">Add New Business Acount ?</a></p>
+    </div>
+    <mat-divider>
+    </mat-divider>
+    <div class="_wrap">
+      <mat-list>
+        <mat-list-item>
+          <a routerLink="/overview-page" (click)="link_fn()" [class.hovered_a]="state">
+            <i class="fas fa-tachometer-alt fa-lg" style="color: red;"></i>
+            OVERVIEW
+          </a>
+        </mat-list-item>
+        <br>
+        <mat-list-item>
+          <a>
+            <i class="far fa-user fa-lg"></i>
+            CUSTOMERS
+          </a>
+        </mat-list-item>
+        <br>
+        <mat-list-item>
+          <a>
+            <i class="far fa-clone fa-flip-horizontal fa-lg"></i>
+            BUSINESS OUTLET
+          </a>
+        </mat-list-item>
+        <br>
+        <mat-list-item>
+          <a>
+            <i class="fas fa-mobile-alt fa-lg"></i>
+            TRANSFER MONEY
+          </a>
+        </mat-list-item>
+        <br>
+        <mat-list-item>
+          <a>
+            <i class="fas fa-chart-bar fa-flip-horizontal fa-lg"></i>
+            TRANSCATIONS
+          </a>
+        </mat-list-item>
+        <br>
+        <mat-list-item>
+          <a>
+            <mat-icon>vertical_align_bottom</mat-icon>
+            WITHDRAW FUNDS
+          </a>
+        </mat-list-item>
+        <br>
+        <mat-list-item>
+          <a>
+            <i class="fas fa-plus fa-lg"></i>
+            BANKING
+          </a>
+        </mat-list-item>
+      </mat-list>
+    <mat-list>
+      <div class="containerdivider">
+        <div class="line">
+          <mat-divider></mat-divider>
+        </div>
+        <div class="text mat-typography" style="font-weight: lighter;">SME in a BOX</div>
+        <div class="line">
+          <mat-divider></mat-divider>
+        </div>
+      </div>
+      <mat-list-item>
+        <a routerLink="shop" (click)="link_fn2()" [class.hovered_a]="state2">
+          <i class="fas fa-shopping-cart fa-flip-horizontal fa-lg" style="color: red;"></i>
+          ONLINE SHOP
+        </a>
+      </mat-list-item>
+
+    </mat-list>
+    </div>
+  </mat-sidenav>
+
+
+  <mat-sidenav-content class="_drawer-container">
+    <mat-toolbar>
+      <span class="fd">Business Dashboard</span>
+      <!-- <span class="space"></span> -->
+      <!--        <span flex></span>-->
+      <span class="fill"></span>
+      <div class="custom-select">
+        <!-- <span class="numberCircle" style="margin-bottom: 5px;">0</span> -->
+        <i class="fas fa-dot-circle"></i>
+        <select>
+          <option value="0">Messages</option>
+        </select>
+      </div>
+      <div class="custom-select">
+        <i class="far fa-chart-bar _m-r"></i>
+        <select>
+          <option value="0">Acess Logs</option>
+        </select>
+      </div>
+    </mat-toolbar>
+    <!--    <div class="main-content">-->
+    <!--      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
+    <!--    </div>-->
+    <router-outlet></router-outlet>
+    <div class="row help_row" style="margin-top: -1em;">
+      <div class="col-md-12">
+        <i class="fas fa-envelope-square fa-3x pull-right" style="color: #2E86C1;"></i>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

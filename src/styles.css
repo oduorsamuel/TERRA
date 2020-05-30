@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import "styles-variables.scss";
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import '~bootstrap/dist/css/bootstrap-reboot.css';
+@import '~bootstrap/dist/css/bootstrap-grid.css';
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+html, body {
+  height: 100%;
+  /*width: 1440px;*/
+  /*height: 1024px;*/
+
+  /*overflow-x: hidden;*/
+  /*overflow-y: scroll;*/
+}
+body {
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+  letter-spacing: 0.28px;
+}
+
+a:hover {
+  text-decoration: none;
+}
