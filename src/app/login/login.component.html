@@ -1,1 +1,53 @@
-<p>login works!</p>
+<section style="background-color: #eaeaea;">
+    <div class="wrapper">
+        <div id="formContent">
+            <div>
+                <img src="assets/logo.png" id="icon" alt="User Icon" />
+            </div>
+            <label> <b>Sign in to your account</b> </label>
+            <mat-divider style="margin-left:2em; margin-right: 2em;"></mat-divider>
+            <br><br>
+            <form>
+                <div class="row">
+                    <br>
+                    <div class="col-md-6">
+                        <p>Merchant Code</p>
+                        <input type="text" placeholder="E.g TRADER2020">
+                    </div>
+                    <div class="col-md-6">
+                        <p>4 Digit PIN</p>
+                        <input type="password" placeholder="4 Digit PIN">
+                    </div>
+
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <small> <i class="fas fa-arrow-left"></i>
+                            Personal Account</small>
+                    </div>
+                    <div class="col-md-8">
+                        <input style="border-radius: 30px;" type="submit" (click)="dashbord()" value="Sign in - for Business">
+                    </div>
+
+                </div>
+
+            </form>
+            <mat-divider style="margin-left:2em; margin-right: 2em;"></mat-divider>
+            <br>
+            <div class="row terms" style="width:100%; background-color: ghostwhite; margin-left:0em; margin-right: 2em;">
+                <div class="col-md-10">
+                    <small style="margin-left: 2em;"> <i class="fas fa-exclamation-circle"></i>
+                        By continuing, you agree to swypePay's Conditions Of Use and Privacy Policy</small>
+                </div>
+            </div>
+            <br>
+            <label> <small>Forgot Password? <a href="#">click here</a></small> </label>
+        </div>
+    </div>
+    <div class="wrapper">
+        <div id="formContent2" style="background-color: transparent;">
+            <small>Don't have an account? <button style="border-radius: 30px;" type="submit" (click)="dashbord()" >Sign In</button></small>
+        </div>
+    </div>
+</section>
