@@ -7,11 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {AppMaterialModule} from './app-material/app-material.module';
 import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 import { LoginComponent } from './login/login.component';
+import { ScreenfourComponent } from './screenfour/screenfour.component';
+import { ScreenfiveComponent } from './screenfive/screenfive.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    ScreenfourComponent,
+    ScreenfiveComponent
   ],
   imports: [
     BrowserModule,
