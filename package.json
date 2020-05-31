@@ -9,15 +9,15 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "heroku-postbuild": "ng build --prod",
+  "postinstall": "ng build --aot --prod",
   "private": true,
   "dependencies": {
-    "@angular/cli": "^9.1.7",
-    "@angular/compiler-cli": "^9.0.7",
     "@angular/animations": "~9.0.1",
     "@angular/cdk": "^9.0.1",
+    "@angular/cli": "^9.1.7",
     "@angular/common": "~9.0.1",
     "@angular/compiler": "~9.0.1",
+    "@angular/compiler-cli": "^9.0.7",
     "@angular/core": "~9.0.1",
     "@angular/forms": "~9.0.1",
     "@angular/material": "^9.0.1",
@@ -29,13 +29,13 @@
     "chart.js": "^2.9.3",
     "chartjs-plugin-annotation": "^0.5.7",
     "d3-scale": "latest",
+    "express": "^4.17.1",
     "ng2-charts": "^2.3.0",
     "ngx-pagination": "^5.0.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
-    "zone.js": "~0.10.2",
-    "typescript": "~3.7.5"
-
+    "typescript": "~3.7.5",
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
     "@angular/cli": "^9.1.7",
