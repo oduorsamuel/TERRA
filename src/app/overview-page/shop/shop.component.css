@@ -5,6 +5,30 @@
   margin-bottom: 20px;
 
 }
+/* Styles for tab labels */
+.mat-tab-label {
+  min-width: 30px !important;
+  margin-top: 0.5em;
+  padding-right: 5px;
+  background-color: transparent;
+  color:#51A0d5 !important;
+}
+
+/* Styles for the active tab label */
+.mat-tab-label.mat-tab-label-active {
+  min-width: 25px !important;
+  padding: 1px;
+  background-color: transparent;
+  color: #cccc;
+  border: 1px solid;
+  border-color: #cccc !important;
+  border-bottom: none !important;
+}
+
+/* Styles for the ink bar */
+.mat-ink-bar {
+  background-color: green;
+}
 .ngx-charts .grid-panel.odd rect {
   background-color: red;
 }

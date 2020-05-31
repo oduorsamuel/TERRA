@@ -96,7 +96,7 @@ input[type=button], input[type=submit], input[type=reset]  {
   background-color: #56baed;
   border: none;
   color: white;
-  padding: 2px 81px;
+  padding: 2px 72px;
   text-decoration: none;
   display: inline-block;
   font-size: 10px;
@@ -151,7 +151,7 @@ input[type=submit]:disabled{
 }
 
 input[type=text],input[type=password] {
-  background-color: #D8BFD8;
+  background-color: #FFFDD0;
   border: none;
   color: #0d0d0d;
   padding: 5px 16px;
@@ -159,7 +159,7 @@ input[type=text],input[type=password] {
   text-decoration: none;
   display: inline-block;
   width: 85%;
-  border: 2px solid #f6f6f6;
+  border: 2px solid #D8BFD8;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;

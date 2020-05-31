@@ -19,7 +19,7 @@
         <mat-list-item>
           <a routerLink="/overview-page" (click)="link_fn()" [class.hovered_a]="state">
             <i class="fas fa-tachometer-alt fa-lg" style="color: red;"></i>
-            OVERVIEW
+            OVERVIEW <button>BETA</button>
           </a>
         </mat-list-item>
         <br>
@@ -78,7 +78,7 @@
       <mat-list-item>
         <a routerLink="shop" (click)="link_fn2()" [class.hovered_a]="state2">
           <i class="fas fa-shopping-cart fa-flip-horizontal fa-lg" style="color: red;"></i>
-          ONLINE SHOP
+          ONLINE SHOP <button>BETA</button>
         </a>
       </mat-list-item>
 
@@ -95,13 +95,13 @@
       <span class="fill"></span>
       <div class="custom-select">
         <!-- <span class="numberCircle" style="margin-bottom: 5px;">0</span> -->
-        <i class="fas fa-dot-circle"></i>
+        <i class="fas fa-dot-circle" style="color: #cccc;"></i>
         <select>
           <option value="0">Messages</option>
         </select>
       </div>
       <div class="custom-select">
-        <i class="far fa-chart-bar _m-r"></i>
+        <i class="far fa-chart-bar _m-r" style="color: #ccc;"></i>
         <select>
           <option value="0">Acess Logs</option>
         </select>

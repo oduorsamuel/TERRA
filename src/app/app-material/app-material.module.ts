@@ -29,6 +29,7 @@ import {MatTableModule} from '@angular/material/table';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatBadgeModule} from '@angular/material/badge';
 
 @NgModule({
   declarations: [],
@@ -46,6 +47,7 @@ import {MatTooltipModule} from '@angular/material/tooltip';
     MatExpansionModule,
     MatGridListModule,
     MatIconModule,
+    MatBadgeModule,
     MatInputModule,
     MatListModule,
     MatMenuModule,
